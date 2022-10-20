@@ -27,3 +27,23 @@ let box2 = 'Hello';
 
 box2 = 10;
 console.log(box2);
+
+/* 
+Правила уменування
+CamelCase
+ім'я змінної повинно бути таким щоб було зрозуміло що в ній зберігається
+
+let data; - bad practice
+let value; - bad practice
+
+let 123value; - bad practice назва змінної повинна починатися з букви
+
+let _value; - bad practice. "_" - приватне поле
+let #value; - bad practice. "#" - приватне поле
+
+*/
+
+let importantVariable;
+importantVariable = 0;
+
+let a = 6;
