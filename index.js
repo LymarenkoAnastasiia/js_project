@@ -1121,6 +1121,9 @@ const user2 = {
 console.log(greeting(user9));  // Hello, Vasya
 console.log(greeting(user2));  // Hello, Anonym
 
+
+
+
 //Цикл for ... in  НЕ for(;;)
 const user8 = {
   name: 'John',
@@ -1133,34 +1136,6 @@ const user8 = {
 for (let key in user8) {
   console.log(`${key} ---- ${user[key]}`);  // key ---- value
 }
-
-/*Задача
-
-Прийняти від користувача (через промпт) назву дня тижня і видати в алерт що заплановано у користувача у цей день.
-Об'єкт з планами виглядає так:
-
-const obj = {
-    Mon: 'driver lesson',
-    Tue: 'dantist visit',
-    Wed: 'go to party',
-    Thu: 'chill',
-    Fri: 'hard work',
-    Sat: 'go to park'
-}
-*/
-const obj2 = {
-  Mon: 'driver lesson',
-  Tue: 'dantist visit',
-  Wed: 'go to party',
-  Thu: 'chill',
-  Fri: 'hard work',
-  Sat: 'go to park'
-}
-
-
-
-
-
 
 
 //Масиви Array
