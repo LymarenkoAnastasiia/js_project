@@ -201,3 +201,56 @@ for (let i = 0; i < array.length; i++) {
 console.log(
     array[i])
 }
+
+//Concat method in array - объединяет массивы в новый
+
+const arr01 = [1, 2, 3];
+const arr02 = [5, 8, 0];
+console.log(arr01.concat(arr02));  // arr03 = arr01 + arr02
+
+
+//Fill method in array - заполняет массив указанным значением
+const arrFive = new Array(5);
+arrFive.fill(1);
+
+
+//Includes method in array - показывает в виде true или false есть ли в масиве искуемый элемент
+const arr03 = [2, 4, 1, 3, 6, 3, 7];
+console.log(arr03.includes(2));
+
+
+//indexOf method in array - возвращает первый индекс, по которому данный элемент может быть найден в масссиве
+// или возвращает -1, если такого индекса нет
+const arr04 = [2, 4, 1, 3, 6, 3, 7];
+console.log(arr04.indexOf(7));  // 6
+console.log(arr04.indexOf(32));  // -1
+
+
+//Join method in array - объединяет все элементы массива в строку(string)
+const arr05 = ['Hello', 'world', 4, 2, 'hi'];
+console.log(arr05.join('-'));  //default separetor - coma (,)
+
+
+//Push method in array - добавляет один или более элементов в конец массива и возвращает новую длину массива
+const arr07 = [2, 3, 4, 5];
+arr07.push(6);
+
+
+//Pop method in array - удаляет последний элемент из массива и возвращает его значение
+const arr08 = [5, 6, 7, 8];
+console.log(arr08.pop());
+
+
+//Shift method in array - удаляет первый элемент из массива и возвращает его значение. Изменяет длину массива
+const arr09 = [4,5,6,7,8];
+console.log(arr09.shift());
+
+
+//Unshift method in array - добавляет первый элемент из массива и возвращает новую длину массива
+const arr10 = [4,5,6,7,8];
+arr10.unshift(3, 6);
+
+
+//Reverse method in array - переворачивает порядок массива, последний элемент становится первым, а первый последним
+const arr11 = [1, 2, 3, 4, 5, 6];
+arr11.reverse();

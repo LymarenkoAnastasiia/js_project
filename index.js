@@ -1139,7 +1139,8 @@ for (let key in user8) {
 
 
 //Масиви Array
-//Slice method in array - копіює масив з індекса М(включно) до індекса N(не включаючи)
+//Slice method in array - возвращает новый массив, содержащий копию части исходного массива
+//начиная с первого указанного индекса (включая) и до конечноного указанного индекса (не включая)
 const array = [1, 2, 3, 4, 5];
 console.log(array.slice(2, 4));  // 3, 4
 console.log(array.slice(2)); // 3, 4, 5
@@ -1273,102 +1274,4 @@ const array6 = [1, 2, 3, 4, 5];
 
 const newArray1 = array6.map((item) => {
 return item**2;
-})
-
-
-/*
-Завдання
-Дан масив об'єктів
-const users0 = [
-  {
-    name: 'John',
-    lastName: 'Doe',
-    age: 18,
-    email: 'mail@com'
-  },
-  {
-    name: 'Jane',
-    lastName: 'Doe',
-    age: 20,
-    email: 'mail@com'
-  },
-  {
-    name: 'Josh',
-    lastName: 'Doe',
-    age: 17,
-    email: 'mail@com'
-  },
-  {
-    name: 'Jake',
-    lastName: 'Doe',
-    age: 21,
-    email: 'mail@com'
-  },
-  {
-    name: 'Jackson',
-    lastName: 'Doe',
-    age: 17,
-    email: 'mail@com'
-  },
-]
-
-потрібно всім користувачам додати поле isSubscribers = false
-*/
-
-//Рішення
-const users0 = [
-  {
-    name: 'John',
-    lastName: 'Doe',
-    age: 18,
-    email: 'mail@com'
-  },
-  {
-    name: 'Jane',
-    lastName: 'Doe',
-    age: 20,
-    email: 'mail@com'
-  },
-  {
-    name: 'Josh',
-    lastName: 'Doe',
-    age: 17,
-    email: 'mail@com'
-  },
-  {
-    name: 'Jake',
-    lastName: 'Doe',
-    age: 21,
-    email: 'mail@com'
-  },
-  {
-    name: 'Jackson',
-    lastName: 'Doe',
-    age: 17,
-    email: 'mail@com'
-  },
-]
-/* variant 1
-function addSubscribeField(item) {
-  item.isSubscribed = false;
-}
-
-users0.forEach(addSubscribeField);
-*/
-
-// variant 2
-users0.forEach((item) => {
-item.isSubscribed = false;
-})
-
-
-/*Завдання
-Дан масив const arr = [2, 44, 11, 234, 8, 2, 4, 1]
-
-Зробити новий масив, всі елементи якого = елемент зі старого масиву + 100
-*/
-
-const arr4 = [2, 44, 11, 234, 8, 2, 4, 1];
-const plus100 = arr4.map((item) => {
-  return item + 100;
 })
