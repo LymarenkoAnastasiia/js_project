@@ -442,7 +442,7 @@ class Stack {
 //Deck
 
 class Queue {
-    constructor(..args) {
+    constructor(...args) {
         this._head = 0;
         this._tail = 0;
         for(const item of args) {
