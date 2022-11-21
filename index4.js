@@ -495,3 +495,5 @@ function translator(str2, options) {
     const translatedArray = arrayWords.map((word) => vocabulary.has(word) ? vocabulary.get(word) : word);
     return translatedArray.join(separator);
 }
+
+const map1 = new Map(); //<-- [[key1, value1], [key2. value2]]
