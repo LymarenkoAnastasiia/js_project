@@ -143,6 +143,30 @@ for(const par of btn5) {
 
 
 
-/*Завдання
+const imageDB = [
+    "JS_DOM\images\blackieshoot-CXc545c989c-unsplash.jpg",
+    "JS_DOM\images\don-ricardo-h4axblGzDVQ-unsplash.jpg",
+    "JS_DOM\images\mary-skrynnikova-sE0gmFKBovY-unsplash.jpg",
+    "JS_DOM\images\rodion-kutsaiev-Vu2CmlqQihA-unsplash.jpg"
+]
 
-*/
+const [prevBtn, nextBtn] = document.querySelectorAll('.btn0');
+const img = document.querySelector('.slide-img');
+
+const slider = new Slider(imageDB);
+
+function updateView() {
+    img.setAttribute('src', slider.currentSlide);
+}
+
+const createSlideBtnHandler = (direction = 'next') => {
+    return function() {
+        slider.currentIndex = slider[direction === 'next' ? 'nextSlide' : 'prevSlide'];
+        updateView;
+    }
+}
+
+prevBtn.addEventListener('click', createSlideBtnHandler('prev'));
+nextBtn.addEventListener('click', createSlideBtnHandler('next'));
+
+updateView();

@@ -1,0 +1,25 @@
+.slide-img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.slider {
+    position: relative;
+}
+
+.btn0 {
+    background-color: black;
+    border: 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.prev {
+    left: 2%;
+}
+
+.next {
+    right: 25;
+}
