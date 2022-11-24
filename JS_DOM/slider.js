@@ -11,7 +11,7 @@ class Slider {
         return this._currentIndex;
     }
 
-    set currentIndex(value) {
+    set currentIndex(v) {
         if(typeof v !== 'number') {
             throw new TypeError('Index must be a number');
         }

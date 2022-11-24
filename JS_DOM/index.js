@@ -144,10 +144,10 @@ for(const par of btn5) {
 
 
 const imageDB = [
-    "JS_DOM\images\blackieshoot-CXc545c989c-unsplash.jpg",
-    "JS_DOM\images\don-ricardo-h4axblGzDVQ-unsplash.jpg",
-    "JS_DOM\images\mary-skrynnikova-sE0gmFKBovY-unsplash.jpg",
-    "JS_DOM\images\rodion-kutsaiev-Vu2CmlqQihA-unsplash.jpg"
+    './images/blackieshoot-CXc545c989c-unsplash.jpg',
+    './images/don-ricardo-h4axblGzDVQ-unsplash.jpg',
+    './images/mary-skrynnikova-sE0gmFKBovY-unsplash.jpg',
+    './images/rodion-kutsaiev-Vu2CmlqQihA-unsplash.jpg'
 ]
 
 const [prevBtn, nextBtn] = document.querySelectorAll('.btn0');
@@ -162,7 +162,7 @@ function updateView() {
 const createSlideBtnHandler = (direction = 'next') => {
     return function() {
         slider.currentIndex = slider[direction === 'next' ? 'nextSlide' : 'prevSlide'];
-        updateView;
+        updateView();
     }
 }
 
@@ -170,3 +170,30 @@ prevBtn.addEventListener('click', createSlideBtnHandler('prev'));
 nextBtn.addEventListener('click', createSlideBtnHandler('next'));
 
 updateView();
+
+
+/*Завдання
+маємо число
+маємо дві кнопки + і -
+за натисненням кнопки + число збільшується на 1
+за натисненням кнопки - число зменшується на 1
+*/
+
+//Рішення
+let num = 0;
+const div = document.querySelector('#number');
+const [decrement, increment] = document.querySelectorAll('.btn1');
+
+function updateDiv() {
+    div.innerHTML = num;
+}
+
+decrement.addEventListener('click', () => {
+    num--;
+    updateDiv();
+})
+
+increment.addEventListener('click', () => {
+    num++;
+    updateDiv();
+})
