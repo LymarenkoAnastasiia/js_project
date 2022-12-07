@@ -1,4 +1,4 @@
-.item {
+/* .item {
     list-style-type: circle;
 }
 
@@ -9,4 +9,32 @@
     background-color: pink;
     color:black;
     font-size: 1.5em;
+} */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget-card {
+    border: 2px dotted orangered;
+    border-radius: 8px;
+    width: 20vw;
+    padding: 20px;
+}
+
+.weather {
+    display: none;
+}
+
