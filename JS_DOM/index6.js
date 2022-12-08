@@ -1,3 +1,5 @@
+//Monobank API currency data
+
 fetch('https://api.monobank.ua/bank/currency')
 .then((response) => response.json())
 .then((data) => {replaceCurrencyCode(data)})
@@ -26,4 +28,15 @@ function showCource(courseData) {
         document.body.append(div);
     }
     })
+}
+
+
+//async await
+
+const url = 'https://randomuser.me/api';
+
+async function loadData(url) {
+    const p = fetch(url);
+    const res = await p;
+    return res;
 }
